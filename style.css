@@ -55,8 +55,7 @@ header h4 {
 }
 .main-container .container {
     position: absolute;
-    width: 50%;
-    min-width: 300px;
+    max-width: 300px;
     text-align: center;
     top: 45px;
     display: grid;
@@ -68,13 +67,12 @@ span {
     height: 20px;
     color: white;
     padding: 3px;
-    font-size: 10px;
+    font-size: 11px;
 }
 @media (min-width: 600px) {
     .main-container .container {
         position: absolute;
         max-width: 600px;
-        margin-right: 100px;
     }
     span {
         font-size: 15px;
@@ -83,17 +81,15 @@ span {
 
 }
 @media (min-width: 800px) {
-    .main-container {
-        position: absolute;
-        margin-left: 40px;
-    }
     .main-container .input {
         position: relative;
         min-width: 400px;
+        left: 35px;
     }
     .main-container button {
-        min-width: 130px;
         position: relative;
+        min-width: 130px;
+        left: 40px;
     }
     .main-container span {
         height: 35px;
