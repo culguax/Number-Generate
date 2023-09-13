@@ -61,7 +61,7 @@ header h4 {
     text-align: center;
     top: 45px;
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     grid-auto-rows: auto;
 }
 span {
@@ -69,14 +69,16 @@ span {
     height: 20px;
     color: white;
     padding: 3px;
-    font-size: 9px;
+    font-size: 12px;
 }
 
 
 @media (min-width: 600px) {
     .main-container .container {
         position: absolute;
-        max-width: 600px;
+        max-width: 600px;display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-auto-rows: auto;
     }
     span {
         font-size: 15px;
@@ -85,6 +87,11 @@ span {
 
 }
 @media (min-width: 800px) {
+    .main-container .container {
+        display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: auto;
+    }
     .main-container .input {
         position: relative;
         min-width: 400px;
